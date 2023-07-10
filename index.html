@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora de despesas</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Calculo de despesas</h1>
+    <div class="container">
+      <div class="selection">
+        <label for="select" class="label">Selecione o tipo de despesa:</label>
+        <select class="select" id="select">
+          <option value="Alimentação">Alimentação</option>
+          <option value="Transporte">Transporte</option>
+          <option id="Moradia">Moradia</option>
+          <option value="Educação">Educação</option>
+          <option value="Outros">Outros</option>
+        </select>
+      </div>
+      <div class="start-values">
+        <input id="text-value" type="number" placeholder="valor do gasto" />
+        <button class="button" id="button-value">Adicionar</button>
+      </div>
+      <div class="get-values">
+        <p id="acumulate-values">Valores acumulados:</p>
+        <button class="button" id="button-total">Total</button>
+        <h3 id="total">Total:</h3>
+        <button class="button" id="button-media">Média</button>
+        <h3 id="media">Média:</h3>
+      </div>
+      <div class="delet">
+        <button class="button" id="button-delet">Deletar</button>
+      </div>
+      <div class="table">
+        <p id="food">Alimentação(R$):</p>
+        <p id="transp">Transporte(R$):</p>
+        <p id="house">Moradia(R$):</p>
+        <p id="education">Educação(R$):</p>
+        <p id="others">Outros(R$):</p>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
